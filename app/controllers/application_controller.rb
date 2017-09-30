@@ -4,6 +4,11 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   
   def hello
-    render html: "<h1>Hello World!!!</h1>"
+    hello = "<h1>Message</h1>"
+    hello +=" and thenn.."
+    render html: hello.html_safe
+    
+
+    #render html: "<p>Why is the HTML syntax being displayed?"
   end
 end
