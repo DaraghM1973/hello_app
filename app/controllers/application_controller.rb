@@ -6,6 +6,8 @@ class ApplicationController < ActionController::Base
   def hello
     hello = "<h1>Message</h1>"
     hello +=" and thenn.."
+    hello +="<p>Amy is the best</p>"
+    hello +="some other text"
     render html: hello.html_safe
     
 
